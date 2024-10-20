@@ -17,8 +17,10 @@
     <link rel="canonical" href={$page.url.href}>
 </svelte:head>
 
-<div class="w-full max-w-screen-lg mx-auto px-4">
-  <!-- <Header/> -->
-  <slot />
+<div class="flex flex-col min-h-screen">
+  <Header />
+  <main class="flex-grow">
+    <slot />
+  </main>
   <Footer/>
 </div>

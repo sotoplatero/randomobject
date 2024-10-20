@@ -26,7 +26,7 @@
 
     <section class="mb-12">
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Categories</h2>
-        <CategoryList columns={2} />
+        <CategoryList  />
     </section>
 
     <section class="mb-12">

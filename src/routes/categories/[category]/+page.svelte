@@ -15,8 +15,8 @@
 </svelte:head>
 
 <main class="max-w-3xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">
-        <span class="text-5xl" aria-hidden="true">{categories.find(c => c.id === category)?.emoji || '🔮'}</span> {categoryName} Object Generator
+    <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-8">
+        <span class="text-4xl" aria-hidden="true">{categories.find(c => c.id === category)?.emoji || '🔮'}</span> {categoryName} Object Generator
     </h1>
 
     <RandomObject {category} initialObjects={randomObjects} />
@@ -30,7 +30,7 @@
 
     <section class="mb-12">
         <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Other Categories</h2>
-        <CategoryList columns={3} />
+        <CategoryList />
     </section>
 
     <section>

@@ -1,5 +1,5 @@
 
-<article class="py-24 mx-auto">
+<article class="prose py-24 mx-auto">
     
     <form action="https://api.web3forms.com/submit" method="POST" class="w-full max-w-md mx-auto space-y-4">
         <h1 class="">Contact Me</h1>

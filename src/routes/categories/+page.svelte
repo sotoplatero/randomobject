@@ -9,7 +9,7 @@
 
 <main class="max-w-3xl mx-auto p-6">
     <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">
-        <span class="text-5xl" aria-hidden="true">🔮</span> RandomObject Categories
+        Random Object Categories
     </h1>
 
     <CategoryList columns={2} />

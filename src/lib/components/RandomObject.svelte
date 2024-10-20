@@ -99,10 +99,10 @@
         class="bg-gray-100 p-8 sm:p-16 rounded-lg cursor-pointer hover:bg-gray-200 transition duration-300 relative"
     >
         {#if objectImage}
-        <div class="aspect-video overflow-hidden mb-2">
+        <div class="aspect-video overflow-hidden mb-1">
             <img src={objectImage} alt={currentObject?.name} class="mx-auto aspect-video object-cover max-w-full h-auto rounded-lg shadow-lg" />
         </div>
-        <p class="text-sm text-center text-gray-500">
+        <p class="text-xs text-center text-gray-500">
             Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
         </p>
         {:else}

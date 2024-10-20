@@ -49,12 +49,6 @@
         </ul>
     </section>
 
-    <section>
-        <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">About RandomObject</h2>
-        <p class="text-gray-600 text-center">
-            RandomObject is powered by advanced AI technology, leveraging OpenAI's GPT models to create unique and diverse objects. Our goal is to spark creativity, inspire innovation, and provide endless entertainment through the power of artificial intelligence and human imagination.
-        </p>
-    </section>
 </main>
 
 <style>

@@ -1,3 +1,9 @@
+<header>
+    <h1 class="text-3xl font-bold text-center text-gray-800">
+        🔮 Random Object Generator
+    </h1>
+</header>
+
 <div class="navbar bg-base-100">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>

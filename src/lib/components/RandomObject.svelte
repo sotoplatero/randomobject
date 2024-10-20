@@ -94,22 +94,27 @@
         <input type="hidden" name="category" value={category}>
     </form>
 
-    <article 
-        on:click={handleObjectClick}
-        class="bg-gray-100 p-8 sm:p-16 rounded-lg cursor-pointer hover:bg-gray-200 transition duration-300 relative"
+    <article         
+        class="bg-gray-100 p-6 sm:p-12 rounded-lg cursor-pointer hover:bg-gray-200 transition duration-300 relative"
     >
         {#if objectImage}
-        <div class="aspect-video overflow-hidden mb-1">
-            <img src={objectImage} alt={currentObject?.name} class="mx-auto aspect-video object-cover max-w-full h-auto rounded-lg shadow-lg" />
-        </div>
-        <p class="text-xs text-center text-gray-500">
-            Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
-        </p>
+            <button on:click={handleObjectClick} class="aspect-video overflow-hidden mb-1 w-full">
+                <img src={objectImage} alt={currentObject?.name} class="aspect-video object-cover w-full h-auto rounded-lg" />
+            </button>
+            <p class="text-xs text-center text-gray-500">
+                Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
+            </p>
         {:else}
-        <p class="text-center text-gray-500 mb-4">No image available</p>
+            <p class="text-center text-gray-500 mb-4">No image available</p>
         {/if}
-        <h2 class="text-5xl sm:text-6xl font-extrabold text-center mb-4 gradient-text">{currentObject?.name}</h2>
-        <p class="text-sm text-center text-gray-600 mt-4">{currentObject?.description}</p>
+
+        <button on:click={handleObjectClick} class="block mx-auto">
+            <h2 class="text-5xl sm:text-6xl font-extrabold text-center mb-4 gradient-text">
+                {currentObject?.name}
+            </h2>
+            <p class="text-sm text-center text-gray-600 mt-4">{currentObject?.description}</p>
+        </button>
+
     </article>
 </div>
 

@@ -97,18 +97,23 @@
     <article         
         class="bg-gray-100 p-6 sm:p-12 rounded-lg cursor-pointer hover:bg-gray-200 transition duration-300 relative"
     >
+        <button on:click={handleObjectClick} class="aspect-video mb-4 w-full bg-gray-200 rounded-lg overflow-hidden">
+            {#if objectImage}
+                <img src={objectImage} alt={currentObject?.name} class="w-full h-full object-cover" />
+            {:else}
+                <div class="w-full h-full flex items-center justify-center text-gray-400">
+                    No image available
+                </div>
+            {/if}
+        </button>
+        
         {#if objectImage}
-            <button on:click={handleObjectClick} class="aspect-video overflow-hidden mb-1 w-full">
-                <img src={objectImage} alt={currentObject?.name} class="aspect-video object-cover w-full h-auto rounded-lg" />
-            </button>
-            <p class="text-xs text-center text-gray-500">
+            <p class="text-xs text-center text-gray-500 mb-4">
                 Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
             </p>
-        {:else}
-            <p class="text-center text-gray-500 mb-4">No image available</p>
         {/if}
 
-        <button on:click={handleObjectClick} class="block mx-auto">
+        <button on:click={handleObjectClick} class="block w-full">
             <h2 class="text-5xl sm:text-6xl font-extrabold text-center mb-4 gradient-text">
                 {currentObject?.name}
             </h2>

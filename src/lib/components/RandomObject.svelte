@@ -122,7 +122,7 @@
 
     </article>
 </div>
-
+<!-- 
 <style>
     .gradient-text {
         background: linear-gradient(45deg, #FF1493, #00BFFF, #FF4500, #1E90FF);
@@ -144,4 +144,4 @@
             background-position: 0% 50%;
         }
     }
-</style>
+</style> -->

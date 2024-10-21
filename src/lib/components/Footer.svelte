@@ -11,7 +11,7 @@
                 </p>
             </div>
            <div>
-                <ul class="space-y-2">
+                <ul class="flex flex-wrap justify-center gap-4">
                     <li><a href="/" class="text-blue-500 hover:underline">Home</a></li>
                     <li><a href="/contact" class="text-blue-500 hover:underline">Contact</a></li>
                     <li><a href="/categories" class="text-blue-500 hover:underline">Categories</a></li>

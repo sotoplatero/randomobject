@@ -97,28 +97,32 @@
     <article         
         class="bg-gray-100 p-6 sm:p-12 rounded-lg cursor-pointer hover:bg-gray-200 transition duration-300 relative"
     >
-        <button on:click={handleObjectClick} class="aspect-video mb-4 w-full bg-gray-200 rounded-lg overflow-hidden">
+    <button on:click={handleObjectClick} class="block w-full mb-4">
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-center gradient-text">
+            {currentObject?.name}
+        </h2>
+        <p class="text-center text-gray-600 mt-4">{currentObject?.description}</p>
+    </button>
+    
+    <section class="mb-4">
+        <button on:click={handleObjectClick} class="aspect-[4/3] w-full bg-gray-200 rounded-lg overflow-hidden">
             {#if objectImage}
-                <img src={objectImage} alt={currentObject?.name} class="w-full h-full object-cover" />
-            {:else}
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    No image available
-                </div>
+        <img src={objectImage} alt={currentObject?.name} class="w-full h-full object-cover" />
+        {:else}
+        <div class="w-full h-full flex items-center justify-center text-gray-400">
+            No image available
+        </div>
             {/if}
         </button>
-        
         {#if objectImage}
-            <p class="text-xs text-center text-gray-500 mb-4">
-                Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
-            </p>
-        {/if}
+        <p class="text-xs text-center text-gray-500">
+        Photo by <a href={imagePageUrl} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">{photographer}</a> on Pixabay
+    </p>
+    {/if}
+    </section>
+    
 
-        <button on:click={handleObjectClick} class="block w-full">
-            <h2 class="text-5xl sm:text-6xl font-extrabold text-center mb-4 gradient-text">
-                {currentObject?.name}
-            </h2>
-            <p class="text-sm text-center text-gray-600 mt-4">{currentObject?.description}</p>
-        </button>
+
 
     </article>
 </div>

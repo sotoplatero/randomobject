@@ -21,12 +21,16 @@
         <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-4">
             <span class="text-4xl" aria-hidden="true">{categoryInfo?.emoji || '🔮'}</span> {categoryName} Object Generator
         </h1>
+    </section>
+    
+    <RandomObject {category} initialObjects={randomObjects} />
+    
+    <section class="mb-12">
+        <h2 class="text-2xl font-bold text-center text-gray-800">What are {categoryName}?</h2>
         <p class="text-gray-600 text-center max-w-xl mx-auto">
             {categoryInfo?.seoDescription || `Explore a wide variety of ${categoryName.toLowerCase()} objects generated. Each object is unique and comes with its own description. Perfect for inspiration, learning, or just for fun!`}
         </p>
     </section>
-
-    <RandomObject {category} initialObjects={randomObjects} />
 
 
     <section class="mb-12">

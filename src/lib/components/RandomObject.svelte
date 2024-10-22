@@ -101,7 +101,7 @@
         <h2 class="text-3xl sm:text-5xl font-extrabold text-center gradient-text">
             {currentObject?.name}
         </h2>
-        <p class="text-center text-gray-600 mt-4">{currentObject?.description}</p>
+        <p class="text-sm sm:text-base text-center text-gray-600 mt-4">{currentObject?.description}</p>
     </button>
     
     <section class="mb-4">
